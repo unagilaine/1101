@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>our kids</title>
+</head>
+<body>
+    <div class="page-container">
+        <h1 id="greeting-message"></h1>
+        <div class="name-inputs" id="name-inputs">
+            <input type="text" id="name1" placeholder="child 1">
+            <input type="text" id="name2" placeholder="child 2">
+			<input type="text" id="name3" placeholder="child 3">
+			<input type="text" id="name4" placeholder="child 4">
+			<input type="text" id="name5" placeholder="child 5">
+			<input type="text" id="name6" placeholder="child 6">
+			<input type="text" id="name7" placeholder="child 7">
+			<input type="text" id="name8" placeholder="child 8">
+			<input type="text" id="name9" placeholder="child 9">
+			<input type="text" id="name10" placeholder="child 10">
+			<input type="text" id="name11" placeholder="child 11">
+        </div>
+        <button onclick="checkNames()">check names</button>
+        <div class="button-container">
+            <button id="proceed-btn" onclick="proceedToGame()" disabled>proceed to game</button>
+        </div>
+        <span id="error-message" class="error-message"></span>
+    </div>
+    <script>
+        const userName = localStorage.getItem('userName');
+        if (userName) {
+            document.getElementById('greeting-message').textContent = `oh hello, ${userName}! in order to proceed, please fill in the names below.`;
+        } else {
+            document.getElementById('greeting-message').textContent = 'oh hello! in order to proceed, please fill in the names below.';
+        }
+    </script>
+    <script src="page2.js"></script>
+</body>
+</html>

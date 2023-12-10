@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>for sophie</title>
+    <style>
+        #end-game-button {
+            display: none;
+            margin: 0 auto;
+            background-color: #b972cc
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #end-game-button:hover {
+            background-color: #c475d9;
+		}
+    </style>
+</head>
+<body>
+    <div id="hangman-container">
+        <div id="hangman">💣</div>
+        <div id="word"></div>
+        <div id="hint"></div>
+        <div id="round"></div>
+        <div id="preview"></div>
+		<input type="text" id="letter-input" placeholder="Enter a letter" style="opacity: 0; width: 1px;">
+        <button id="next-button" onclick="nextRound()">next</button>
+        <button id="end-game-button" onclick="endGame()">yes</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+             const letterInput = document.getElementById("letter-input");
+            letterInput.style.width = "auto";
+            letterInput.focus();
+        });
+    </script>
+	
+	<script src="game.js"></script>
+	
+</body>
+</html>                                                                                                                                                                                                                                                                        
