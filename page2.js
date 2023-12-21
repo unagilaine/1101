@@ -5,8 +5,8 @@ let correctNames = [
     "Elena Shay",
     "Emir Shane",
     "Emma Sophia",
-    "Elliot Seint",
-    "Eve Serenity",
+    "Elliot Saint",
+    "Evie Serenity",
     "Enrique Sebastian",
     "Elaine Sophie",
     "Eric Steven"
