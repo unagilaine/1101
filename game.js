@@ -8,7 +8,7 @@ const words = [
 	{ word: "ghost", hint: "noun: hantu / verb: something sophie did to elaine" },
 	{ word: "this love", hint: "our song" }, 
 	{ word: "love you to the moon and to saturn", hint: "(last song, line 13) too" }, 
-	{ word: "something", hint: "you're _______" }, 
+	{ word: "everything", hint: "you're _______" }, 
     { word: "will you be my girlfriend", hint: "possibly the second most important question i’ll ever ask you" }
 ];
 
